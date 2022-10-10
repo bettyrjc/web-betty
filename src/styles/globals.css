@@ -2,3 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
+
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lato&family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', 'lato', sans-serif !important;
+}
