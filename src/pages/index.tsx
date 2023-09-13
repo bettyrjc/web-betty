@@ -4,6 +4,10 @@ import Doll from '@components/icons/doll';
 import { Cards } from '@components/layout/Cards';
 import SocialMedia from '@components/commons/social-media';
 import Layout from '@components/Layout';
+import CSSIcon from '@components/icons/css';
+import JSIcon from '@components/icons/js';
+import ReactIcon from '@components/icons/react';
+import SwiftIcon from '@components/icons/swift';
 
 const Home: NextPage = () => {
   return (
@@ -24,10 +28,17 @@ const Home: NextPage = () => {
             </div>
             <div className="">
               <Doll />
+              <div className="flex items-center justify-center gap-5 p-2 bg-yellow-100 rounded-lg shadow-lg opacity-75 ">
+                <ReactIcon />
+                <JSIcon />
+                <SwiftIcon />
+                <CSSIcon />
+              </div>
             </div>
           </div>
-          <Cards />
         </div>
+        {/* <Cards /> */}
+
         <div className="z-50 flex items-center justify-end w-full ">
           <SocialMedia />
         </div>

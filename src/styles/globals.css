@@ -2,9 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 @tailwind variants;
+/* 
+font-family: 'Coming Soon', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Roboto', sans-serif; */
 
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Lato&family=Roboto&display=swap');
 
 body {
-  font-family: 'Roboto', 'lato', sans-serif !important;
+  font-family: 'Coming Soon', 'Roboto', 'lato', sans-serif;
 }

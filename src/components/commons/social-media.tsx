@@ -9,7 +9,7 @@ const SocialMedia = () => {
           <ImGithub className="text-4xl" />
         </a>
       </Link>
-      <Link href="https://twitter.com/bettyrjce">
+      <Link href="https://twitter.com/betjce">
         <a className="text-orange-500">
           <ImTwitter className="text-4xl" />
         </a>
