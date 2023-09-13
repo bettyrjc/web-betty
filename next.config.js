@@ -5,6 +5,11 @@ const nextConfig = {
   eslint: {
     dirs: ['src'],
   },
+  images: {
+    loader: 'akamai',
+    path: '',
+  },
+  assetPrefix: './',
   // experimental: {
   //   nftTracing: true,
   //   outputFileTracing: true,
