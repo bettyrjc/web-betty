@@ -1,26 +1,25 @@
-import Image from 'next/image';
 import React from 'react';
-import Layout from '@components/Layout';
-import me from '../../public/images/betty.jpg';
+
+// import Image from 'next/image';
+
 import WavePhot from '@components/icons/wave-three';
+import Layout from '@components/Layout';
+// import me from '../../public/images/betty.jpg';
 const AboutMe = () => {
-  const styles = {
-    borderRadius: '1000px',
-  };
   return (
     <Layout>
       <div className="flex justify-center w-full p-16">
         <div className="flex items-center justify-center">
           <div className="relative mr-40 rounded">
             <div className="relative z-10 rounded-full">
-              <Image
-                src={me}
-                alt="Picture of the author"
-                width={300}
-                height={400}
-                object-fit="contain"
-                style={styles}
-              />
+              {/* <Image
+              //   src={me}
+              //   alt="Picture of the author"
+              //   width={300}
+              //   height={400}
+              //   object-fit="contain"
+              //   style={styles}
+              // /> */}
             </div>
             <div className="absolute -top-20 -left-20">
               <WavePhot />

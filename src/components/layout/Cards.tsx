@@ -1,4 +1,5 @@
 import React from 'react';
+
 import Card from '../commons/card';
 
 export const Cards = () => {

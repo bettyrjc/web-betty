@@ -8,7 +8,7 @@ import JSIcon from '@components/icons/js';
 import ReactIcon from '@components/icons/react';
 import SwiftIcon from '@components/icons/swift';
 import Layout from '@components/Layout';
-import { Cards } from '@components/layout/Cards';
+// import { Cards } from '@components/layout/Cards';
 
 const Home: NextPage = () => {
   return (

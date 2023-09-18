@@ -1,6 +1,7 @@
 import React from 'react';
-import Layout from '@components/Layout';
+
 import Card from '@components/commons/large-card';
+import Layout from '@components/Layout';
 
 const BlogView = () => {
   return (

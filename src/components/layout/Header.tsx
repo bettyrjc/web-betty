@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react';
 import { HiOutlineMoon, HiMoon } from 'react-icons/hi';
 
