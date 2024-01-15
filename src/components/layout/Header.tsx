@@ -22,13 +22,15 @@ const Header = () => {
         )}
       </button> */}
       <div className="flex items-center justify-between gap-6 text-lg font-medium text-orange-500">
-        {/* <Link href="/blog">
-          <a className="hover:text-orange-800">Blog</a>
-        </Link> */}
-
-        {/* <Link href="/about-me">
+        <Link href="/projects">
+          <a className="hover:text-orange-800">Projects</a>
+        </Link>
+        <Link href="/podcast">
+          <a className="hover:text-orange-800">Podcast</a>
+        </Link>
+        <Link href="/about-me">
           <a className="hover:text-orange-800">About me</a>
-        </Link> */}
+        </Link>
         {/* <div className="px-3 py-2 bg-yellow-500 rounded-md cursor-pointer">🇺🇸 English</div> */}
       </div>
     </div>
