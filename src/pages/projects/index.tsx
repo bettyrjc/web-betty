@@ -37,7 +37,7 @@ const Projects = () => {
           <div className="lg:w-1/2">
             <div className="flex items-center justify-between w-full p-3 duration-500 bg-yellow-100 border border-yellow-500 rounded-md shadow-md md:w-3/4 hover:scale-105 h-14 hover:shadow-xl">
               <h3 className="text-sm font-bold text-orange-500 md:text-md ">
-                Mica Leasing Company - UI/UX Designer and Developer
+                Frontend Developer | UI/UX Designer - Mica Leasing Company -
               </h3>
               <button
                 className="w-24 p-2 ml-2 text-sm rounded-md cursor-pointer text-teal hover:bg-teal hover:text-white hover:opacity-90"
@@ -52,7 +52,7 @@ const Projects = () => {
             </div>
             <div className="flex items-center justify-between w-full p-3 my-6 text-sm duration-500 bg-yellow-100 border border-yellow-500 rounded-md shadow-md md:w-3/4 hover:scale-105 h-14 hover:shadow-xl">
               <h3 className="font-bold text-orange-500 text-md md:text-md ">
-                Meru Auto-Parts E-Commerce - Frontend Engineer
+                Frontend Engineer - Meru Auto-Parts E-Commerce
               </h3>
               <button
                 className="w-24 p-2 text-sm rounded-md cursor-pointer text-teal hover:bg-teal hover:text-white hover:opacity-90"
@@ -67,7 +67,7 @@ const Projects = () => {
             </div>
             <div className="flex items-center justify-between w-full p-3 my-6 text-sm duration-500 bg-yellow-100 border border-yellow-500 rounded-md shadow-md md:w-3/4 hover:scale-105 h-14 hover:shadow-xl">
               <h3 className="font-bold text-orange-500 text-md md:text-md ">
-                Asistensi Insurance Company - Leader Front at EMS | UX/UI Designer in EMS
+                Front lead at EMS | UX/UI Designer in EMS - Asistensi Insurance Company
               </h3>
               <button
                 className="w-24 p-2 text-sm rounded-md cursor-pointer text-teal hover:bg-teal hover:text-white hover:opacity-90"
