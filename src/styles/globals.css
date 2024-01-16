@@ -12,3 +12,22 @@ font-family: 'Roboto', sans-serif; */
 body {
   font-family: 'Coming Soon', 'Roboto', 'lato', sans-serif;
 }
+
+.icon-container {
+  display: flex;
+}
+
+.icon-container > * {
+  opacity: 1;
+  animation: showIcons 8s infinite; /* Ajusta la duración según tus preferencias */
+}
+
+@keyframes showIcons {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

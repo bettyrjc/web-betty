@@ -1,8 +1,16 @@
 import React from 'react';
 
-function CSSIcon() {
+function CSSIcon({ largeSize = false }) {
+  const iconSize = largeSize ? { width: '300', height: '300' } : { width: '84', height: '70' };
+
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="77" height="86" fill="none" viewBox="0 0 77 86">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={iconSize.width}
+      height={iconSize.height}
+      fill="none"
+      viewBox="0 0 77 86"
+    >
       <path fill="#51B4A4" d="M76.833 0H0l6.781 76.797 31.636 9.036 31.64-9.036L76.833 0z"></path>
       <path fill="#51B4A4" d="M38.416 6.776V78.83l25.313-7.224 5.65-64.829H38.417z"></path>
       <path

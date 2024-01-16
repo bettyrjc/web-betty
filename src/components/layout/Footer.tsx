@@ -1,26 +1,18 @@
 import React from 'react';
 
 import Logo from '../icons/logo';
-import WaveOne from '../icons/wave-one';
-import WaveTwo from '../icons/wave-two';
+// import WaveOne from '../icons/wave-one';
+// import WaveTwo from '../icons/wave-two';
 
 const Footer = () => {
   return (
     <>
-      <div className="relative w-full ">
-        <div className="motion-safe:animate-wiggle">
-          <WaveOne />
+      <div className="flex items-center justify-around py-4 m-0 border-t bg-yellow-50 between border-t-gray-100">
+        <div className="hidden md:block">
+          <Logo />
         </div>
-        <div className="absolute bottom-0 left-0 right-0 z-100">
-          <WaveTwo />
-        </div>
-        <div className="absolute bottom-0 left-0 right-0 flex items-center justify-around py-4 between ">
-          <div className="hidden md:block">
-            <Logo />
-          </div>
-          <p className="text-orange-500">© 2022 Betty jimenez. All rights reserved.</p>
-          <p></p>
-        </div>
+        <p className="text-orange-500"> 2024 Betty jimenez - Frontend Developer</p>
+        <p></p>
       </div>
     </>
   );

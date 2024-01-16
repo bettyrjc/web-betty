@@ -1,5 +1,5 @@
 import React from 'react';
-import { ImGithub, ImTwitter, ImMug } from 'react-icons/im';
+import { ImGithub, ImLinkedin, ImMug } from 'react-icons/im';
 
 import Link from 'next/link';
 const SocialMedia = () => {
@@ -10,9 +10,9 @@ const SocialMedia = () => {
           <ImGithub className="text-4xl" />
         </a>
       </Link>
-      <Link href="https://twitter.com/betjce">
+      <Link href="https://www.linkedin.com/in/bettyrjc/">
         <a className="text-orange-500">
-          <ImTwitter className="text-4xl" />
+          <ImLinkedin className="text-4xl" />
         </a>
       </Link>
 

@@ -1,39 +1,73 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { useState } from 'react';
-import { HiOutlineMoon, HiMoon } from 'react-icons/hi';
+import { HiMenu, HiX } from 'react-icons/hi';
 
 import Link from 'next/link';
 
 import Logo from '../icons/logo';
+
 const Header = () => {
-  const [dark, setDark] = useState(false);
+  // const [dark, setDark] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className="flex items-center justify-between p-4 mx-2 bg-yellow-50">
-      <Link href="/">
-        <a>
-          <Logo />
-        </a>
-      </Link>
-      {/* <button onClick={() => setDark(!dark)}>
-        {dark ? (
-          <HiMoon className="text-3xl text-orange-500" />
-        ) : (
-          <HiOutlineMoon className="text-3xl text-orange-500" />
-        )}
-      </button> */}
-      <div className="flex items-center justify-between gap-6 text-lg font-medium text-orange-500">
-        <Link href="/projects">
-          <a className="hover:text-orange-800">Projects</a>
+    <>
+      <div className="relative flex items-center justify-between p-4 mx-2 bg-yellow-50">
+        <Link href="/">
+          <a className="w-14 md:w-full">
+            <Logo />
+          </a>
         </Link>
-        <Link href="/podcast">
-          <a className="hover:text-orange-800">Podcast</a>
-        </Link>
-        <Link href="/about-me">
-          <a className="hover:text-orange-800">About me</a>
-        </Link>
-        {/* <div className="px-3 py-2 bg-yellow-500 rounded-md cursor-pointer">🇺🇸 English</div> */}
+        <button
+          className="text-3xl text-orange-500 bg-orange-800 md:bg-transparent lg:hidden"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          <HiMenu />
+        </button>
+        <div className="items-center justify-end hidden w-1/2 gap-4 text-lg font-medium text-orange-500 lg:flex">
+          <Link href="/projects">
+            <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+              Experience
+            </a>
+          </Link>
+          {/* <Link href="/podcast">
+            <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+              Podcast
+            </a>
+          </Link> */}
+          <Link href="/about-me">
+            <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+              About me
+            </a>
+          </Link>
+        </div>
       </div>
-    </div>
+      {menuOpen && (
+        <div className="fixed inset-0 z-50 pt-10 bg-white">
+          <div className="absolute top-4 right-4">
+            <button className="text-2xl text-orange-500" onClick={() => setMenuOpen(false)}>
+              <HiX />
+            </button>
+          </div>
+          <div className="flex flex-col items-center justify-center text-lg font-medium text-orange-500">
+            <Link href="/projects">
+              <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+                Experience
+              </a>
+            </Link>
+            {/* <Link href="/podcast">
+              <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+                Podcast
+              </a>
+            </Link> */}
+            <Link href="/about-me">
+              <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+                About me
+              </a>
+            </Link>
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 

@@ -1,8 +1,16 @@
 import React from 'react';
 
-function JSIcon() {
+function JSIcon({ largeSize = false }) {
+  const iconSize = largeSize ? { width: '300', height: '300' } : { width: '84', height: '70' };
+
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width="83" height="83" fill="none" viewBox="0 0 83 83">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={iconSize.width}
+      height={iconSize.height}
+      fill="none"
+      viewBox="0 0 83 83"
+    >
       <path
         fill="#F3CC83"
         d="M2.89 0A2.896 2.896 0 00.02 3.25l7.71 61.646c.119.963.708 1.797 1.572 2.229l30.823 15.412a2.902 2.902 0 002.589 0l30.823-15.412a2.884 2.884 0 001.572-2.23L82.819 3.25a2.871 2.871 0 00-.703-2.27A2.888 2.888 0 0079.948 0H2.891z"

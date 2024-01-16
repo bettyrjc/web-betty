@@ -1,7 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
-import SocialMedia from '@components/commons/social-media';
 import CSSIcon from '@components/icons/css';
 import Doll from '@components/icons/doll';
 import JSIcon from '@components/icons/js';
@@ -14,8 +13,11 @@ const Home: NextPage = () => {
   return (
     <div className="bg-yellow-50">
       <Head>
-        <title>Betty Jiménez</title>
-        <meta name="description" content="Frontend developer with react js" />
+        <title>Frontend Developer - Betty Jiménez</title>
+        <meta
+          name="description"
+          content="Experienced frontend developer specializing in React.js. Explore my portfolio showcasing projects and achievements in web development."
+        />
         <link rel="icon" href="/images/icon.png" />
       </Head>
       <Layout>
@@ -36,11 +38,6 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-        </div>
-        {/* <Cards /> */}
-
-        <div className="z-50 flex items-center justify-end w-full ">
-          <SocialMedia />
         </div>
       </Layout>
     </div>
