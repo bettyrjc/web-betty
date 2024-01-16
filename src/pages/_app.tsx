@@ -1,6 +1,4 @@
 import '../styles/globals.css';
-import { getAnalytics } from 'firebase/analytics';
-import { initializeApp } from 'firebase/app';
 import type { AppProps } from 'next/app';
 // const firebaseConfig = {
 //   apiKey: 'AIzaSyCv7aed_dSOai3ECpwlwfZOAeWxeUIpGQM',
