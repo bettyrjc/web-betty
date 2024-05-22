@@ -26,14 +26,14 @@ const Header = () => {
         <div className="items-center justify-end hidden w-1/2 gap-4 text-lg font-medium text-orange-500 lg:flex">
           <Link href="/projects">
             <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+              Projects
+            </a>
+          </Link>
+          <Link href="/experience">
+            <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
               Experience
             </a>
           </Link>
-          {/* <Link href="/podcast">
-            <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
-              Podcast
-            </a>
-          </Link> */}
           <Link href="/about-me">
             <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
               About me

@@ -25,7 +25,9 @@ const Home: NextPage = () => {
           <div className="flex flex-col-reverse w-full h-auto px-3 mb-40 lg:px-10 lg:justify-center lg:flex lg:flex-row">
             <div className="flex items-center justify-center w-full lg:w-1/6">
               <div className="z-10 w-full p-4 font-bold text-center bg-yellow-500 rounded-lg shadow font-roboto mt-18 mr-18">
-                <p className="text-sm text-orange-500 opacity-100 lg:text-xl ">Betty Jiménez Frontend Engineer 👩🏻‍💻</p>
+                <p className="text-sm text-orange-500 opacity-100 lg:text-xl ">
+                  Frontend Engineer & Full Stack Enthusiast 👩🏻‍💻
+                </p>
               </div>
             </div>
             <div className="mb-2 lg:mb-0">
