@@ -12,6 +12,12 @@ import eagerTimer from '../../../public/images/EagerTimer.png';
 import flashChat from '../../../public/images/flashChat.png';
 import quiz from '../../../public/images/quiz.png';
 import registerFlashChat from '../../../public/images/registerFlashChat.png';
+import TyIcon from '@components/icons/TyIcon';
+import CSSIcon from '@components/icons/css';
+import JSIcon from '@components/icons/js';
+import NodeIcon from '@components/icons/node';
+import ReactIcon from '@components/icons/react';
+import SwiftIcon from '@components/icons/swift';
 
 const Card = ({
   title,
@@ -88,6 +94,16 @@ const Projects = () => {
             />
           );
         })}
+        <div className="flex items-center justify-center w-full">
+          <div className="flex items-center justify-center w-1/3 lg:p-2 lg:gap-5 ">
+            <ReactIcon className="animate-icon-up" />
+            <TyIcon className="animate-icon-down" />
+            <JSIcon className="animate-icon-up" />
+            <NodeIcon className="animate-icon-down" />
+            <SwiftIcon className="animate-icon-up" />
+            <CSSIcon className="animate-icon-down" />
+          </div>
+        </div>
         <div>
           <h2 className="my-4 text-xl font-bold text-orange-800">Backend projects</h2>
           <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
