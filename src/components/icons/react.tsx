@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ReactIcon({ largeSize = false, className }) {
+function ReactIcon({ largeSize = false, className = '' }) {
   const iconSize = largeSize ? { width: '300', height: '300' } : { width: '84', height: '70' };
   return (
     <svg

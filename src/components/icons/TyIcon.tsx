@@ -1,4 +1,4 @@
-function TyIcon({ className }) {
+function TyIcon({ className = '' }) {
   return (
     <svg
       className={className}

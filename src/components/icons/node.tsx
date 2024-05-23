@@ -1,6 +1,6 @@
 import React from 'react';
 
-function NodeIcon({ className }) {
+function NodeIcon({ className = '' }) {
   return (
     <svg
       className={className}

@@ -1,6 +1,6 @@
 import React from 'react';
 
-function SwiftIcon({ largeSize = false, className }) {
+function SwiftIcon({ largeSize = false, className = '' }) {
   const iconSize = largeSize ? { width: '300', height: '300' } : { width: '84', height: '70' };
 
   return (
