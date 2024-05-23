@@ -1,10 +1,7 @@
 import React from 'react';
 
-// import Image from 'next/image';
-
 import Image from 'next/image';
 
-import WavePhot from '@components/icons/wave-three';
 import Layout from '@components/Layout';
 
 import me from '../../public/images/betty.jpeg';
@@ -12,9 +9,9 @@ const AboutMe = () => {
   return (
     <Layout>
       <div className="flex justify-center w-full p-16">
-        <div className="flex items-start justify-center w-full">
-          <div className="relative mr-40 rounded">
-            <div className="relative bottom-0 left-0 right-0 z-10 rounded-full top-20">
+        <div className="items-start justify-center w-full lg:flex">
+          <div className="mr-10 rounded ">
+            <div className="relative top-0 bottom-0 left-0 right-0 z-10 rounded-full">
               <Image
                 src={me}
                 alt="Picture of the author"
@@ -24,25 +21,26 @@ const AboutMe = () => {
                 object-fit="contain"
               />
             </div>
-            <div className="absolute top-0 right-0 w-full -left-14">
-              <WavePhot />
-            </div>
           </div>
-          <div className=" text-teal">
+          <div className="w-full mt-1 lg:w-4/6 text-teal">
             <h1 className="mb-4 text-4xl font-bold">Betty Jiménez</h1>
-            <p className="text-lg leading-8 w-96 min-h-3">
-              Hello! I am a passionate front-end developer with over 4 years of hands-on experience in crafting engaging
-              and responsive user interfaces. Throughout my journey, I have honed my skills with a diverse set of
-              technologies, bringing ideas to life and creating seamless digital experiences. In my projects, I have
-              extensively worked with technologies such as{' '}
-              <span className="my-2 font-bold">
-                React Native, React.js, Swift, CSS, HTML, JavaScript, Docker, TypeScript, Firebase, GitHub Actions,
-                Tailwind CSS, Chakra UI, Redux, React Queries, Figma, and more.{' '}
-              </span>{' '}
-              Each project is a testament to my dedication to staying at the forefront of cutting-edge technologies,
-              ensuring that the solutions I deliver are not just functional but also innovative and user-friendly. I
-              thrive on challenges and am always eager to explore new ways to elevate the user experience. Let us
-              connect and explore the possibilities of bringing your ideas to the digital realm!
+            <p className="w-full text-lg leading-8 min-h-3">
+              Hello! I am a front-end developer with over 5 years of hands-on experience crafting engaging and
+              responsive user interfaces. Throughout my journey, I have honed my skills with diverse technologies,
+              bringing ideas to life and creating seamless digital experiences. In my projects, I have extensively
+              worked with technologies such as JavaScript for frontend using frameworks like React Native, and React.js.
+              I use CSS 3 for styles using frameworks like chakraUI and Tailwind for further efficiency. Besides, I am
+              knowledgeable in Redux and React queries to manage the global state of the applications. Furthermore, I
+              have experience with Figma for making designs. I’m proficient in using typed applications using
+              typescript, To make easier to write accurate code more quickly and catch bugs before runtime. Each project
+              is a testament to my dedication to staying at the forefront of cutting-edge technologies, ensuring that
+              the solutions I deliver are functional but also innovative and user-friendly. I thrive on challenges and
+              am always eager to explore new ways to elevate the user experience. I am passionate about connecting and
+              exploring the possibilities of bringing customers’ ideas to the digital realm! I am a proactive person and
+              look to stay up-to-date with the technologies to be a better professional. I like to bring ideas for
+              improving project results and giving users satisfactory customer service. As well I am always forward to
+              accountability for achieving the team’s mission or goal. Together with your company’s ideologies, I see
+              this role as an excellent opportunity to make a positive impact and grow professionally.
             </p>
           </div>
         </div>

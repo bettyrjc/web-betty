@@ -1,13 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import React, { useEffect } from 'react';
+import { FiGithub } from 'react-icons/fi';
 
 import Image from 'next/image';
+import Link from 'next/link';
 
-import { JOBS_ASSISTENSI, JOBS_MERU, JOBS_MICA } from '@components/constanst/positions';
-import CSSIcon from '@components/icons/css';
-import JSIcon from '@components/icons/js';
-import ReactIcon from '@components/icons/react';
-import SwiftIcon from '@components/icons/swift';
+import { BACKEND_PROJECTS, FULL_STACK_PROJECTS } from '@components/constanst/projects';
 import Layout from '@components/Layout';
 
 import eagerTimer from '../../../public/images/EagerTimer.png';
@@ -15,10 +13,55 @@ import flashChat from '../../../public/images/flashChat.png';
 import quiz from '../../../public/images/quiz.png';
 import registerFlashChat from '../../../public/images/registerFlashChat.png';
 
+const Card = ({
+  title,
+  description,
+  tecnologies,
+  features,
+  link,
+  index,
+}: {
+  title: string;
+  description: string;
+  link: string;
+  index: number;
+  features: string[];
+  tecnologies: { name: string; stack: string }[];
+}) => {
+  return (
+    <div
+      className="w-full p-4 mb-6 text-gray-900 transition-all duration-300 ease-in-out transform bg-yellow-100 border border-yellow-100 rounded-lg shadow-sm hover:shadow-xl"
+      key={index}
+    >
+      <h1 className="text-lg font-bold text-orange-500">{title}</h1>
+      <p className="mt-2 text-gray-600 text-md">{description}</p>
+      <h6 className="my-2 font-semibold text-orange-500">Tecnologies</h6>
+
+      {tecnologies.map((activity, index) => (
+        <div key={index} className="flex gap-2 my-1 ml-4">
+          <h6 className="mb-1 text-orange-500">{activity?.name}</h6>
+          <p className="mb-2">{activity?.stack}</p>
+        </div>
+      ))}
+      <h6 className="my-2 font-semibold text-orange-500">Features</h6>
+
+      {features.map((feature, index) => (
+        <div key={index} className="flex gap-2 my-1 ml-4">
+          <p className="mb-2">- {feature}</p>
+        </div>
+      ))}
+      <div key={index} className="flex gap-2 my-1">
+        <Link className="mb-2" href={link} target="_blank">
+          <div className="flex gap-3 ml-2 border-b items-align border-b-orange-500">
+            <FiGithub className="text-orange-500 text-md" />
+            <h6 className="font-bold text-orange-500">Repositorio</h6>
+          </div>
+        </Link>
+      </div>
+    </div>
+  );
+};
 const Projects = () => {
-  const [showMica, setShowMica] = React.useState(false);
-  const [showMeru, setShowMeru] = React.useState(false);
-  const [showAssistensi, setAssitensi] = React.useState(false);
   const [currentIcon, setCurrentIcon] = React.useState(1);
 
   useEffect(() => {
@@ -32,7 +75,39 @@ const Projects = () => {
   return (
     <Layout>
       <div className="relative w-full min-h-screen px-4 mt-10 mb-10 transition-all duration-500 lg:px-16 bg-yellow-50">
-        <h1 className="w-full mb-4 text-xl font-bold text-orange-800 "> Latest project</h1>
+        {FULL_STACK_PROJECTS.map((job, index) => {
+          return (
+            <Card
+              key={index}
+              title={job.title}
+              description={job.description}
+              tecnologies={job.tecnologies}
+              features={job.features}
+              link={job.link}
+              index={index}
+            />
+          );
+        })}
+        <div>
+          <h2 className="my-4 text-xl font-bold text-orange-800">Backend projects</h2>
+          <div className="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3">
+            {BACKEND_PROJECTS.map((job, index) => {
+              return (
+                <Card
+                  key={index}
+                  title={job.title}
+                  description={job.description}
+                  tecnologies={job.tecnologies}
+                  features={job.features}
+                  link={job.link}
+                  index={index}
+                />
+              );
+            })}
+          </div>
+        </div>
+
+        <h1 className="w-full mb-4 text-xl font-bold text-orange-800 "> Swift projects</h1>
         <div className="flex-row-reverse items-center justify-between block w-full mb-10 lg:flex">
           <div className="w-full lg:ml-10 text-teal">
             <p className="w-full md:w-1/2 gray-800">

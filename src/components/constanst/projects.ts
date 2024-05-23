@@ -5,15 +5,15 @@ export const FULL_STACK_PROJECTS = [
       'The Full Stack Challenge project is a comprehensive application that demonstrates a full-stack development approach using modern technologies. The project includes both frontend and backend components, showcasing a complete and functional web application. In this project we upload a file and conver it to json format.',
     tecnologies: [
       {
-        name: 'Frontend',
+        name: 'Frontend:',
         stack: 'React.js, TypeScript, ChakraUI, React Query, React hooks.',
       },
       {
-        name: 'Backend',
+        name: 'Backend:',
         stack: 'Node.js, Express',
       },
       {
-        name: 'Database',
+        name: 'Database:',
         stack: 'MongoDB',
       },
     ],
