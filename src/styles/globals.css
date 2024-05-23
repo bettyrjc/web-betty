@@ -31,3 +31,31 @@ body {
     opacity: 1;
   }
 }
+
+.animate-icon-up {
+  animation: bounceUp 1s infinite;
+}
+
+.animate-icon-down {
+  animation: bounceDown 1s infinite;
+}
+
+@keyframes bounceUp {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+@keyframes bounceDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+}

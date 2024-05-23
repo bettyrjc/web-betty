@@ -30,7 +30,7 @@ const Card = ({
 }) => {
   return (
     <div
-      className="w-full p-4 mb-6 text-gray-900 transition-all duration-300 ease-in-out transform bg-yellow-100 border border-yellow-100 rounded-lg shadow-sm hover:shadow-xl"
+      className="w-full p-4 mb-6 text-gray-900 transition-all duration-300 ease-in-out transform bg-yellow-100 border border-yellow-100 rounded-lg shadow-sm "
       key={index}
     >
       <h1 className="text-lg font-bold text-orange-500">{title}</h1>
@@ -50,11 +50,11 @@ const Card = ({
           <p className="mb-2">- {feature}</p>
         </div>
       ))}
-      <div key={index} className="flex gap-2 my-1">
-        <Link className="mb-2" href={link} target="_blank">
-          <div className="flex gap-3 ml-2 border-b items-align border-b-orange-500">
-            <FiGithub className="text-orange-500 text-md" />
-            <h6 className="font-bold text-orange-500">Repositorio</h6>
+      <div key={index} className="flex gap-2 my-1 ">
+        <Link className="mb-2 " href={link} target="_blank">
+          <div className="flex gap-3 ml-2 text-orange-500 border-b cursor-pointer items-align border-b-orange-500 hover:border-b-teal hover:text-teal">
+            <FiGithub className=" text-md" />
+            <h6 className="font-bold cursor-pointer hover:text-teal">See repository</h6>
           </div>
         </Link>
       </div>

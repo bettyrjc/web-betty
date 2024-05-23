@@ -1,8 +1,9 @@
 import React from 'react';
 
-function NodeIcon() {
+function NodeIcon({ className }) {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       width="82"

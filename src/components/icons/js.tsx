@@ -1,10 +1,11 @@
 import React from 'react';
 
-function JSIcon({ largeSize = false }) {
+function JSIcon({ largeSize = false, className }) {
   const iconSize = largeSize ? { width: '300', height: '300' } : { width: '84', height: '70' };
 
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width={iconSize.width}
       height={iconSize.height}

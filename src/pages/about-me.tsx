@@ -22,9 +22,9 @@ const AboutMe = () => {
               />
             </div>
           </div>
-          <div className="w-full mt-1 lg:w-4/6 text-teal">
+          <div className="w-full h-screen mt-1 lg:w-4/6 text-teal">
             <h1 className="mb-4 text-4xl font-bold">Betty Jiménez</h1>
-            <p className="w-full text-lg leading-8 min-h-3">
+            <p className="w-full text-xl leading-8 min-h-3">
               Hello! I am a front-end developer with over 5 years of hands-on experience crafting engaging and
               responsive user interfaces. Throughout my journey, I have honed my skills with diverse technologies,
               bringing ideas to life and creating seamless digital experiences. In my projects, I have extensively
@@ -39,8 +39,7 @@ const AboutMe = () => {
               exploring the possibilities of bringing customers’ ideas to the digital realm! I am a proactive person and
               look to stay up-to-date with the technologies to be a better professional. I like to bring ideas for
               improving project results and giving users satisfactory customer service. As well I am always forward to
-              accountability for achieving the team’s mission or goal. Together with your company’s ideologies, I see
-              this role as an excellent opportunity to make a positive impact and grow professionally.
+              accountability for achieving the team’s mission or goal.
             </p>
           </div>
         </div>
