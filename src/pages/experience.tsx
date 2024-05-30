@@ -40,7 +40,7 @@ const Experience = () => {
                   setShowMeru(false);
                 }}
               >
-                Ver más
+                See more
               </button>
             </div>
             <div className="flex items-center justify-between w-full p-3 my-6 text-sm duration-500 bg-yellow-100 border border-yellow-500 rounded-md shadow-md md:w-3/4 hover:scale-105 h-14 hover:shadow-xl">
@@ -55,7 +55,7 @@ const Experience = () => {
                   setShowMeru(!showMeru);
                 }}
               >
-                Ver más
+                See more
               </button>
             </div>
             <div className="flex items-center justify-between w-full p-3 my-6 text-sm duration-500 bg-yellow-100 border border-yellow-500 rounded-md shadow-md md:w-3/4 hover:scale-105 h-14 hover:shadow-xl">
@@ -70,7 +70,7 @@ const Experience = () => {
                   setShowMeru(false);
                 }}
               >
-                Ver más
+                See more
               </button>
             </div>
           </div>
