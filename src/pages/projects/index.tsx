@@ -6,18 +6,18 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 import { BACKEND_PROJECTS, FULL_STACK_PROJECTS } from '@components/constanst/projects';
+import CSSIcon from '@components/icons/css';
+import JSIcon from '@components/icons/js';
+import NodeIcon from '@components/icons/node';
+import ReactIcon from '@components/icons/react';
+import SwiftIcon from '@components/icons/swift';
+import TyIcon from '@components/icons/TyIcon';
 import Layout from '@components/Layout';
 
 import eagerTimer from '../../../public/images/EagerTimer.png';
 import flashChat from '../../../public/images/flashChat.png';
 import quiz from '../../../public/images/quiz.png';
 import registerFlashChat from '../../../public/images/registerFlashChat.png';
-import TyIcon from '@components/icons/TyIcon';
-import CSSIcon from '@components/icons/css';
-import JSIcon from '@components/icons/js';
-import NodeIcon from '@components/icons/node';
-import ReactIcon from '@components/icons/react';
-import SwiftIcon from '@components/icons/swift';
 
 const Card = ({
   title,

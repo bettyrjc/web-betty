@@ -8,13 +8,20 @@ type props = { children: any };
 
 const Layout = ({ children }: props) => {
   return (
-    <div className="relative bg-yellow-50">
-      <Header />
-      {children}
-      <div className="fixed bottom-0 right-0 flex items-center justify-end w-full z-100 ">
-        <SocialMedia />
+    <div className="flex items-center justify-center  bg-yellow-50">
+      <div
+        className="relative h-full bg-yellow-50"
+        style={{
+          maxWidth: '1800px',
+        }}
+      >
+        <Header />
+        {children}
+        <div className="fixed bottom-0 right-0 flex items-center justify-end w-full z-100 ">
+          <SocialMedia />
+        </div>
+        <Footer />
       </div>
-      <Footer />
     </div>
   );
 };
