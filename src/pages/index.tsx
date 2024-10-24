@@ -30,6 +30,22 @@ const Home: NextPage = () => {
             `,
         }}
       />
+      <Script
+        id="hotjar-script"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+              (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:5184072,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+              })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+            `,
+        }}
+      />
       <div className="w-full h-screen mb-10 lg:px-16 bg-yellow-50">
         <div className="flex flex-col-reverse w-full h-auto px-3 mb-5 lg:px-10 lg:justify-center lg:flex lg:flex-row">
           <div className="flex items-center justify-center w-full lg:w-3/6">
