@@ -2,10 +2,10 @@ export const JOBS_MICA = [
   {
     name: '  Mica Leasing Company - UI/UX Designer and Developer',
     id: 1,
-    stack: 'Figma, React.js, TypeScript, Tailwind CSS, React Query, React hooks, Husky, React Native.',
+    stack: 'Figma, React.js, TypeScript, Tailwind CSS, React Query, React hooks, Husky, React Native, CI/CD.',
     description:
       'As a UI/UX designer and web/mobile developer at Mica, I embraced significant challenges, the most notable being the intricate process of deploying and organizing the mobile application. This project presented several hurdles, and overcoming them showcased my problem-solving skills and commitment to delivering exceptional results.',
-    activities_name: 'Key Challenges and Achievements:',
+    activities_name: 'Key Challenges and Achievements',
     activities: [
       {
         id: 11,
@@ -88,8 +88,7 @@ export const JOBS_ASSISTENSI = [
   {
     name: 'Asistensi Insurance Company -  Front lead at EMS | UX/UI Designer in EMS',
     id: 3,
-    stack:
-      'Leveraged a robust technology stack, including React.js for frontend development, Tailwind CSS for styling, Jest and Cypress for testing, Sass for enhanced styling capabilities, Docker for containerization, and Figma for design collaboration.',
+    stack: 'React.js, vue.js, Tailwind CSS, Redux, React hooks, CSS3, Figma, Cypress, jest, material ui, docker, Agile',
     description:
       'As the  Front lead at EMS and UX/UI Designer at Asistensi, I spearheaded the design and development of a cutting-edge operative system for medical attention. This transformative project aimed to empower medical professionals by providing an intuitive and user-friendly interface to access, and manage patient data, deliver care, and facilitate seamless communication among healthcare providers.',
     description_up:

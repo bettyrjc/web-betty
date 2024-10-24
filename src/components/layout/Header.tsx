@@ -2,12 +2,16 @@ import React, { useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 import Logo from '../icons/logo';
 
 const Header = () => {
   // const [dark, setDark] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const router = useRouter();
+  const path = router.pathname;
 
   return (
     <>
@@ -25,17 +29,26 @@ const Header = () => {
         </button>
         <div className="items-center justify-end hidden w-1/2 gap-4 text-lg font-medium text-orange-500 lg:flex">
           <Link href="/projects">
-            <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+            <a
+              className={`block py-2 hover:text-orange-800 ${path === '/projects' && ' text-orange-800'}`}
+              onClick={() => setMenuOpen(false)}
+            >
               Projects
             </a>
           </Link>
           <Link href="/experience">
-            <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+            <a
+              className={`block py-2 hover:text-orange-800 ${path === '/experience' && ' text-orange-800'}`}
+              onClick={() => setMenuOpen(false)}
+            >
               Experience
             </a>
           </Link>
           <Link href="/about-me">
-            <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+            <a
+              className={`block py-2 hover:text-orange-800 ${path === '/about-me' && ' text-orange-800'}`}
+              onClick={() => setMenuOpen(false)}
+            >
               About me
             </a>
           </Link>
