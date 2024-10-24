@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Logo from '../icons/logo';
+import Logo from '../../assets/icons/logo';
 // import WaveOne from '../icons/wave-one';
 // import WaveTwo from '../icons/wave-two';
 

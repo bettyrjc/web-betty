@@ -1,10 +1,10 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Link from 'next/link';
-
-import IconPack from '@components/commons/IconPack';
-import Doll from '@components/icons/doll';
-import Layout from '@components/Layout';
+import Script from 'next/script';
+import Doll from 'src/assets/icons/doll';
+import Layout from 'src/modules/layout/Layout';
+import IconPack from 'src/modules/shared/icon-pack';
 
 const Home: NextPage = () => {
   return (
@@ -17,7 +17,19 @@ const Home: NextPage = () => {
         />
         <link rel="icon" href="/images/icon.png" />
       </Head>
-
+      <Script
+        id="gtm-script"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-5NGDG9RW');
+            `,
+        }}
+      />
       <div className="w-full h-screen mb-10 lg:px-16 bg-yellow-50">
         <div className="flex flex-col-reverse w-full h-auto px-3 mb-5 lg:px-10 lg:justify-center lg:flex lg:flex-row">
           <div className="flex items-center justify-center w-full lg:w-3/6">
@@ -47,6 +59,14 @@ const Home: NextPage = () => {
           <IconPack />
         </div>
       </div>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-5NGDG9RW"
+          height="0"
+          width="0"
+          style={{ display: 'none', visibility: 'hidden' }}
+        ></iframe>
+      </noscript>
     </Layout>
   );
 };

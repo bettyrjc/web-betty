@@ -16,7 +16,7 @@
     "jsx": "preserve",
     "downlevelIteration": true,
     "paths": {
-      "@components/*": ["./src/components/*"]
+      "@components/*": ["src/modules/components/*"]
     },
     "incremental": true
   },

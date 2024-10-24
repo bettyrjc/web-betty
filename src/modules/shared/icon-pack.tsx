@@ -1,11 +1,11 @@
 import React from 'react';
 
-import CSSIcon from '@components/icons/css';
-import JSIcon from '@components/icons/js';
-import NodeIcon from '@components/icons/node';
-import ReactIcon from '@components/icons/react';
-import SwiftIcon from '@components/icons/swift';
-import TyIcon from '@components/icons/TyIcon';
+import CSSIcon from 'src/assets/icons/css';
+import JSIcon from 'src/assets/icons/js';
+import NodeIcon from 'src/assets/icons/node';
+import ReactIcon from 'src/assets/icons/react';
+import SwiftIcon from 'src/assets/icons/swift';
+import TyIcon from 'src/assets/icons/TyIcon';
 
 const IconPack = () => {
   return (

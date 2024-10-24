@@ -3,10 +3,10 @@ import React from 'react';
 
 import SeeChallenges from 'src/modules/experience/SeeChallenges';
 
-import IconPack from '@components/commons/IconPack';
-import { JOBS_ASSISTENSI, JOBS_MERU, JOBS_MICA } from '@components/constanst/positions';
-import Doll from '@components/icons/doll';
-import Layout from '@components/Layout';
+import IconPack from 'src/modules/shared/icon-pack';
+import { JOBS_ASSISTENSI, JOBS_MERU, JOBS_MICA } from 'src/assets/constanst/positions';
+import Doll from 'src/assets/icons/doll';
+import Layout from 'src/modules/layout/Layout';
 
 const Experience = () => {
   return (

@@ -4,7 +4,7 @@ import { HiMenu, HiX } from 'react-icons/hi';
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 
-import Logo from '../icons/logo';
+import Logo from '../../assets/icons/logo';
 
 const Header = () => {
   // const [dark, setDark] = useState(false);

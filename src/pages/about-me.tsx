@@ -1,8 +1,7 @@
 import React from 'react';
 
 import Image from 'next/image';
-
-import Layout from '@components/Layout';
+import Layout from 'src/modules/layout/Layout';
 
 import me from '../../public/images/betty.jpeg';
 const AboutMe = () => {

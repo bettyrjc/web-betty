@@ -3,7 +3,7 @@ import React from 'react';
 // import Image from 'next/image';
 
 // import web from '../../../public/web-1.png';
-import Daisy from '../icons/daisy';
+import Daisy from '../../assets/icons/daisy';
 
 type cardProps = {
   title: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Card from '../commons/card';
+import Card from '../shared/card';
 
 export const Cards = () => {
   return (

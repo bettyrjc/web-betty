@@ -5,14 +5,14 @@ import { FiGithub } from 'react-icons/fi';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { BACKEND_PROJECTS, FULL_STACK_PROJECTS } from '@components/constanst/projects';
-import CSSIcon from '@components/icons/css';
-import JSIcon from '@components/icons/js';
-import NodeIcon from '@components/icons/node';
-import ReactIcon from '@components/icons/react';
-import SwiftIcon from '@components/icons/swift';
-import TyIcon from '@components/icons/TyIcon';
-import Layout from '@components/Layout';
+import { BACKEND_PROJECTS, FULL_STACK_PROJECTS } from 'src/assets/constanst/projects';
+import CSSIcon from 'src/assets/icons/css';
+import JSIcon from 'src/assets/icons/js';
+import NodeIcon from 'src/assets/icons/node';
+import ReactIcon from 'src/assets/icons/react';
+import SwiftIcon from 'src/assets/icons/swift';
+import TyIcon from 'src/assets/icons/TyIcon';
+import Layout from 'src/modules/layout/Layout';
 
 import eagerTimer from '../../../public/images/EagerTimer.png';
 import flashChat from '../../../public/images/flashChat.png';

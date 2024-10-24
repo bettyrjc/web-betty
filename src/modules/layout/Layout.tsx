@@ -1,14 +1,14 @@
 import React from 'react';
 
-import SocialMedia from './commons/social-media';
-import Footer from './layout/Footer';
-import Header from './layout/Header';
+import SocialMedia from '../shared/social-media';
+import Footer from './Footer';
+import Header from './Header';
 
 type props = { children: any };
 
 const Layout = ({ children }: props) => {
   return (
-    <div className="flex items-center justify-center  bg-yellow-50">
+    <div className="flex items-center justify-center bg-yellow-50">
       <div
         className="relative h-full bg-yellow-50"
         style={{
