@@ -17,14 +17,11 @@ const Header = () => {
     <>
       <div className="relative flex items-center justify-between p-4 mx-2 bg-yellow-50">
         <Link href="/">
-          <a className="w-14 md:w-full">
+          <a className="w-[150px] md:w-[284px]">
             <Logo />
           </a>
         </Link>
-        <button
-          className="text-3xl text-orange-500 bg-orange-800 md:bg-transparent lg:hidden"
-          onClick={() => setMenuOpen(!menuOpen)}
-        >
+        <button className="text-3xl text-orange-500 md:bg-transparent lg:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           <HiMenu />
         </button>
         <div className="items-center justify-end hidden w-1/2 gap-4 text-lg font-medium text-orange-500 lg:flex">
@@ -62,9 +59,14 @@ const Header = () => {
             </button>
           </div>
           <div className="flex flex-col items-center justify-center text-lg font-medium text-orange-500">
-            <Link href="/projects">
+            <Link href="/experience">
               <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
                 Experience
+              </a>
+            </Link>
+            <Link href="/projects">
+              <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+                Projects
               </a>
             </Link>
             {/* <Link href="/podcast">

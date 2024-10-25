@@ -1,7 +1,16 @@
 import React, { useState } from 'react';
 import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
 
-const SeeChallenges = ({ job }: any) => {
+type ChallengesDescriptionTypes = {
+  activities_name: string;
+  activities: Array<any>;
+};
+type ActivityProp = {
+  id: number;
+  name: string;
+  description: string;
+};
+const ChallengesDescription = ({ activities_name, activities }: ChallengesDescriptionTypes) => {
   const [isVisible, setIsVisible] = useState(false);
 
   const handleClick = () => {
@@ -15,11 +24,11 @@ const SeeChallenges = ({ job }: any) => {
         }`}
         onClick={handleClick}
       >
-        <h5 className="my-2 text-lg font-bold">{job?.activities_name}</h5>
+        <span className="my-2 text-xs font-bold md:text-md">{activities_name}</span>
         {isVisible ? <HiChevronUp className="text-lg" /> : <HiChevronDown className="text-lg" />}
       </button>
       <div className={`transition-all duration-500 ${isVisible ? 'max-h-screen' : 'max-h-0 overflow-hidden'}`}>
-        {job.activities.map((activity) => (
+        {activities.map((activity: ActivityProp) => (
           <div key={activity.id} className="my-1">
             <h6 className="mb-1 font-semibold">{activity?.name}</h6>
             <p className="mb-2 ml-4">{activity?.description}</p>
@@ -30,4 +39,4 @@ const SeeChallenges = ({ job }: any) => {
   );
 };
 
-export default SeeChallenges;
+export default ChallengesDescription;

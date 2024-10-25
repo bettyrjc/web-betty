@@ -13,6 +13,7 @@ const Layout = ({ children }: props) => {
         className="relative h-full bg-yellow-50"
         style={{
           maxWidth: '1800px',
+          minWidth: '320px',
         }}
       >
         <Header />
