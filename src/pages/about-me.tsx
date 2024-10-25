@@ -1,9 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import React from 'react';
 
-import Image from 'next/image';
 import Layout from 'src/modules/layout/Layout';
-
-import me from '../../public/images/betty.jpeg';
 const AboutMe = () => {
   return (
     <Layout>
@@ -11,13 +9,11 @@ const AboutMe = () => {
         <div className="items-start justify-center w-full lg:flex">
           <div className="mr-10 rounded ">
             <div className="relative top-0 bottom-0 left-0 right-0 z-10 rounded-full">
-              <Image
-                src={me}
+              <img
+                src="/images/doll.png"
                 alt="Picture of the author"
-                width={300}
-                height={300}
-                className="rounded-full"
-                object-fit="contain"
+                className="rounded-full w-[320px] h-[320px] object-contain"
+                // objectFit="contain"
               />
             </div>
           </div>

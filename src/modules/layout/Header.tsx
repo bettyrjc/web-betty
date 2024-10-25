@@ -16,38 +16,30 @@ const Header = () => {
   return (
     <>
       <div className="relative flex items-center justify-between p-4 mx-2 bg-yellow-50">
-        <Link href="/">
-          <a className="w-[150px] md:w-[284px]">
-            <Logo />
-          </a>
+        <Link href="/" className="w-[150px] md:w-[284px]">
+          <Logo />
         </Link>
         <button className="text-3xl text-orange-500 md:bg-transparent lg:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           <HiMenu />
         </button>
         <div className="items-center justify-end hidden w-1/2 gap-4 text-lg font-medium text-orange-500 lg:flex">
-          <Link href="/projects">
-            <a
-              className={`block py-2 hover:text-orange-800 ${path === '/projects' && ' text-orange-800'}`}
-              onClick={() => setMenuOpen(false)}
-            >
-              Projects
-            </a>
+          <Link
+            href="/projects"
+            className={`block py-2 hover:text-orange-800 ${path === '/projects' && ' text-orange-800'}`}
+          >
+            Projects
           </Link>
-          <Link href="/experience">
-            <a
-              className={`block py-2 hover:text-orange-800 ${path === '/experience' && ' text-orange-800'}`}
-              onClick={() => setMenuOpen(false)}
-            >
-              Experience
-            </a>
+          <Link
+            href="/experience"
+            className={`block py-2 hover:text-orange-800 ${path === '/experience' && ' text-orange-800'}`}
+          >
+            Experience
           </Link>
-          <Link href="/about-me">
-            <a
-              className={`block py-2 hover:text-orange-800 ${path === '/about-me' && ' text-orange-800'}`}
-              onClick={() => setMenuOpen(false)}
-            >
-              About me
-            </a>
+          <Link
+            href="/about-me"
+            className={`block py-2 hover:text-orange-800 ${path === '/about-me' && ' text-orange-800'}`}
+          >
+            About me
           </Link>
         </div>
       </div>
@@ -59,25 +51,14 @@ const Header = () => {
             </button>
           </div>
           <div className="flex flex-col items-center justify-center text-lg font-medium text-orange-500">
-            <Link href="/experience">
-              <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
-                Experience
-              </a>
+            <Link href="/experience" className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+              Experience
             </Link>
-            <Link href="/projects">
-              <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
-                Projects
-              </a>
+            <Link href="/projects" className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+              Projects
             </Link>
-            {/* <Link href="/podcast">
-              <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
-                Podcast
-              </a>
-            </Link> */}
-            <Link href="/about-me">
-              <a className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
-                About me
-              </a>
+            <Link href="/about-me" className="block py-2 hover:text-orange-800" onClick={() => setMenuOpen(false)}>
+              About me
             </Link>
           </div>
         </div>

@@ -1,13 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
-import Link from 'next/link';
 import Script from 'next/script';
-import Doll from 'src/assets/icons/doll';
 import Layout from 'src/modules/layout/Layout';
 import IconPack from 'src/modules/shared/icon-pack';
 
-import me from '../../public/images/doll.png';
 const Home: NextPage = () => {
   return (
     <Layout>
@@ -49,7 +47,7 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="flex items-center justify-between">
-            <Image src={me} alt="Picture of the author" width={500} height={500} object-fit="contain" />
+            <img src="/images/doll.png" alt="Picture of the author" className="w-[500px] h-[500px] object-contain" />
           </div>
         </div>
         <div className="flex items-center justify-center w-full">

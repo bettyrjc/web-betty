@@ -5,15 +5,11 @@ import Link from 'next/link';
 const SocialMedia = () => {
   return (
     <div className="z-30 flex flex-col items-center justify-end w-16 gap-4 p-4 bg-yellow-100 border rounded-md shadow-xl ">
-      <Link href="https://github.com/bettyrjc" target="_blank">
-        <a className="text-orange-800">
-          <ImGithub className="text-4xl" />
-        </a>
+      <Link href="https://github.com/bettyrjc" target="_blank" className="text-orange-800">
+        <ImGithub className="text-4xl" />
       </Link>
-      <Link href="https://www.linkedin.com/in/bettyrjc/" target="_blank">
-        <a className="text-orange-800">
-          <ImLinkedin className="text-4xl" />
-        </a>
+      <Link href="https://www.linkedin.com/in/bettyrjc/" target="_blank" className="text-orange-800">
+        <ImLinkedin className="text-4xl" />
       </Link>
     </div>
   );

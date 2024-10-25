@@ -4,7 +4,6 @@ import { FiGithub } from 'react-icons/fi';
 
 import Image from 'next/image';
 import Link from 'next/link';
-
 import { BACKEND_PROJECTS, FULL_STACK_PROJECTS } from 'src/assets/constanst/projects';
 import CSSIcon from 'src/assets/icons/css';
 import JSIcon from 'src/assets/icons/js';
@@ -14,10 +13,10 @@ import SwiftIcon from 'src/assets/icons/swift';
 import TyIcon from 'src/assets/icons/TyIcon';
 import Layout from 'src/modules/layout/Layout';
 
-import eagerTimer from '../../../public/images/EagerTimer.png';
-import flashChat from '../../../public/images/flashChat.png';
-import quiz from '../../../public/images/quiz.png';
-import registerFlashChat from '../../../public/images/registerFlashChat.png';
+// import eagerTimer from '../../../public/images/EagerTimer.png';
+// import flashChat from '../../../public/images/flashChat.png';
+// import quiz from '../../../public/images/quiz.png';
+// import registerFlashChat from '../../../public/images/registerFlashChat.png';
 
 const Card = ({
   title,
@@ -123,7 +122,7 @@ const Projects = () => {
           </div>
         </div>
 
-        <h1 className="w-full mb-4 text-xl font-bold text-orange-800 "> Swift projects</h1>
+        {/* <h1 className="w-full mb-4 text-xl font-bold text-orange-800 "> Swift projects</h1>
         <div className="flex-row-reverse items-center justify-between block w-full mb-10 lg:flex">
           <div className="w-full lg:ml-10 text-teal">
             <p className="w-full md:w-1/2 gray-800">
@@ -154,7 +153,7 @@ const Projects = () => {
             {currentIcon === 3 && <Image src={flashChat} alt="flashchat" width={375} height={800} />}
             {currentIcon === 4 && <Image src={registerFlashChat} alt="flashchat" width={375} height={800} />}
           </div>
-        </div>
+        </div> */}
         {/* https://bettyrjc.github.io/instagram-copy/ 
         https://bettyrjc.github.io/copia_outlook/
         */}
