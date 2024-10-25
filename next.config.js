@@ -9,6 +9,7 @@ const nextConfig = {
     loader: 'default',
     path: '/',
   },
+  output: 'export',
 };
 
 module.exports = nextConfig;
