@@ -1,15 +1,20 @@
-// const { i18n } = require('./next-i18next.config');
+const { i18n } = require('./next-i18next.config');
 
 const nextConfig = {
+  // i18n,
   reactStrictMode: true,
   eslint: {
     dirs: ['src'],
   },
   images: {
-    loader: 'default',
+    loader: 'akamai',
     path: '/',
   },
-  output: 'export',
+  // assetPrefix: './',
+  // experimental: {
+  //   nftTracing: true,
+  //   outputFileTracing: true,
+  // },
 };
 
 module.exports = nextConfig;
