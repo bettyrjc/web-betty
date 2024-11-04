@@ -4,10 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build": "next build",
+    "export": "next export"
   },
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^6.7.0",
