@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
 // import { HiChevronDown, HiChevronUp } from 'react-icons/hi';
 
 type ActivityProp = {
@@ -21,7 +22,7 @@ const ChallengesDescription = ({ activities_name, activities }: any) => {
         onClick={handleClick}
       >
         <span className="my-2 text-xs font-bold md:text-md">{activities_name}</span>
-        {/* {isVisible ? <HiChevronUp className="text-lg" {...{}} /> : <HiChevronDown className="text-lg" {...{}} />} */}
+        {isVisible ? <HiChevronUp className="text-lg" {...{}} /> : <HiChevronDown className="text-lg" {...{}} />}
       </button>
       <div className={`transition-all duration-500 ${isVisible ? 'max-h-screen' : 'max-h-0 overflow-hidden'}`}>
         {activities.map((activity: ActivityProp) => (
