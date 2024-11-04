@@ -16,11 +16,11 @@ const Header = () => {
   return (
     <>
       <div className="relative flex items-center justify-between p-4 mx-2 bg-yellow-50">
-        <div className=" w-[160px] ">
-          <Link href="/" className="w-full ">
+        <Link href="/" className="w-full cursor-pointer">
+          <div className=" w-[160px]  cursor-pointer ">
             <Logo />
-          </Link>
-        </div>
+          </div>
+        </Link>
         <button className="text-3xl text-orange-500 md:bg-transparent lg:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           <HiMenu />
         </button>
