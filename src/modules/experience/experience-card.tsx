@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ChallengesDescription from './challenges-description';
+import ChallengesDescription from './ChallengeDescription';
 
 type ExperienceDescription = {
   job: {
@@ -21,7 +21,7 @@ const ExperienceCard = ({ job }: ExperienceDescription) => {
       <h1 className="text-xl font-bold text-orange-800">{job?.name}</h1>
       <p className="mt-2 text-gray-600 text-md">{job?.stack}</p>
       <h4 className="mt-4 font-medium text-gray-900 text-md ">{job?.description}</h4>
-      <ChallengesDescription activities_name={job?.activities_name} activities={job?.activities} />
+      {/* <ChallengesDescription activities_name={job?.activities_name} activities={job?.activities} /> */}
     </div>
   );
 };
