@@ -90,3 +90,28 @@ export const BACKEND_PROJECTS = [
     link: 'https://github.com/bettyrjc/psico-app',
   },
 ];
+
+export const FRONTEND_PROJECTS = [
+  {
+    title: 'Design system',
+    description:
+      ' A design system is a collection of reusable components, guided by clear standards, that can be assembled together to build any number of applications.',
+    tecnologies: [
+      {
+        name: 'Stack:',
+        stack: 'React.js, TypeScript, Tailwind, storybook, React hooks.',
+      },
+      {
+        name: 'Architecture:',
+        stack: 'Screaming architecture and for organize css BEM, ATOM and ITCSS.',
+      },
+    ],
+    features: [
+      'Dropdown: A dropdown component that can be used to create a dropdown menu.',
+      'Button: A button component that can be used to create a button with different styles.',
+      'Dropdown search: A dropdown search component that can be used to create a dropdown search menu.',
+    ],
+    link: 'https://github.com/bettyrjc/design-system',
+    web: 'https://design-system-3b2ljavt2-betty-jimenezs-projects.vercel.app/',
+  },
+];
