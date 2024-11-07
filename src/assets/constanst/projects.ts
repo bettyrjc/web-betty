@@ -114,4 +114,22 @@ export const FRONTEND_PROJECTS = [
     link: 'https://github.com/bettyrjc/design-system',
     web: 'https://design-system-3b2ljavt2-betty-jimenezs-projects.vercel.app/',
   },
+  {
+    title: 'Poke to combat',
+    description: 'Poke to combat is where you can choose your favorite pokemon to fight with other pokemons.',
+    tecnologies: [
+      {
+        name: 'Stack:',
+        stack: 'React.js, TypeScript, Tailwind, redux, daysi.ui, cypress and React hooks.',
+      },
+    ],
+    features: [
+      'Search: A search component that can be used to search pokemons.',
+      'Filter: A filter component that can be used to filter pokemons by name.',
+      'ADD: A button to add pokemons to the combat.',
+      'DELETE: A button to delete pokemons from the combat.',
+    ],
+    link: 'https://github.com/bettyrjc/combat-pokemon',
+    web: 'https://combat-pokemon-five.vercel.app/',
+  },
 ];
