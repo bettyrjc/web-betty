@@ -1,4 +1,4 @@
-import { title } from 'process';
+import { features, title } from 'process';
 
 export const FULL_STACK_PROJECTS = [
   {
@@ -142,6 +142,11 @@ export const FRONTEND_PROJECTS = [
         name: 'Stack:',
         stack: 'Vue, TypeScript, Vite, tailwindcss.',
       },
+    ],
+    features: [
+      'Silhouette: A silhouette component that can be used to show the silhouette of a pokemon.',
+      'List: A list component that can be used to show the list of pokemons.',
+      'Button: A button component that can be used to select the correct pokemon.',
     ],
     link: 'https://github.com/bettyrjc/pokemon-chose',
     web: 'https://pokemon-chose.vercel.app/',
