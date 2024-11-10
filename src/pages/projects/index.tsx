@@ -8,7 +8,7 @@ import ProjectCard from 'src/modules/projects/ProjectCard';
 import Sidebar from 'src/modules/projects/Sidebar';
 
 const Projects = () => {
-  const [tab, setTab] = React.useState('fullstack');
+  const [tab, setTab] = React.useState('frontend');
 
   return (
     <Layout>
