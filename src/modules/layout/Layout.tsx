@@ -12,7 +12,7 @@ const Layout = ({ children }: props) => {
       <div
         className="relative h-full bg-yellow-50"
         style={{
-          maxWidth: '1800px',
+          maxWidth: '1600px',
           minWidth: '320px',
         }}
       >

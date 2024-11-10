@@ -10,8 +10,8 @@ import TyIcon from 'src/assets/icons/TyIcon';
 const IconSection = () => {
   return (
     <div
-      className="items-center justify-center w-[200px] 
-            lg:fixed lg:right-0 lg:w-auto flex flex lg:gap-8 lg:flex-col lg:ml-8 lg:h-[400px]"
+      className="items-center justify-center w-[200px]
+            lg:fixed lg:right-0 lg:w-auto flex lg:gap-8 lg:flex-col lg:ml-8 lg:h-[400px]"
     >
       <ReactIcon className="animate-icon-up" />
       <TyIcon />

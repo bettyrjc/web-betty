@@ -6,11 +6,11 @@ const SideCard = ({ title, id, onClick, tab }) => {
     <button
       onClick={() => onClick(id)}
       className={`
-         ${tab === id ? 'bg-teal text-white shadow-md hover:bg-teal' : 'text-teal hover:bg-yellow-50 hover:shadow-md'}
+         ${tab === id ? 'shadow-md' : 'text-teal hover:bg-yellow-50 hover:shadow-md'}
       flex items-center mx-2 lg:my-2 justify-between w-full px-2 py-2 text-orange-500 rounded-md cursor-pointer lg:py-3 border-b-1 border-b-orange-500  bg-opaciy-90`}
     >
       <p className="text-lg font-medium ">{title}</p>
-      <FiChevronRight className="hidden text-xl lg:block" />
+      {tab === id && <FiChevronRight className="hidden text-xl lg:block" />}
     </button>
   );
 };

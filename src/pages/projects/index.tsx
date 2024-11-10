@@ -14,8 +14,8 @@ const Projects = () => {
     <Layout>
       <div className="block min-h-screen lg:flex">
         <Sidebar setTab={setTab} tab={tab} />
-        <div className="flex flex-col-reverse items-center w-full px-2 transition-all duration-500 lg:min-h-screen lg:items-start lg:px-4 lg:flex-row lg:px-16 bg-yellow-50 ">
-          <div className="w-full lg:pr-10">
+        <div className="flex flex-col-reverse items-center w-full px-2 transition-all duration-500 lg:min-h-screen lg:items-start lg:px-8 lg:flex-row bg-yellow-50 ">
+          <div className="w-full">
             {tab === 'fullstack' &&
               FULL_STACK_PROJECTS.map((job, index) => {
                 return (
