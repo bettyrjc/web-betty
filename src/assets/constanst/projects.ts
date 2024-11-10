@@ -1,3 +1,5 @@
+import { title } from 'process';
+
 export const FULL_STACK_PROJECTS = [
   {
     title: 'Full Stack Project',
@@ -131,5 +133,17 @@ export const FRONTEND_PROJECTS = [
     ],
     link: 'https://github.com/bettyrjc/combat-pokemon',
     web: 'https://combat-pokemon-five.vercel.app/',
+  },
+  {
+    title: 'Guess the pokemon',
+    description: 'Guess the Pokémon from its silhouette. Choose the correct name from the list.',
+    tecnologies: [
+      {
+        name: 'Stack:',
+        stack: 'Vue, TypeScript, Vite, tailwindcss.',
+      },
+    ],
+    link: 'https://github.com/bettyrjc/pokemon-chose',
+    web: 'https://pokemon-chose.vercel.app/',
   },
 ];
