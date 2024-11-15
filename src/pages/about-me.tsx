@@ -6,8 +6,8 @@ const AboutMe = () => {
   return (
     <Layout>
       <div className="flex justify-center w-full p-16">
-        <div className="items-start justify-center w-full lg:flex">
-          <div className="mr-10 rounded ">
+        <div className="flex flex-col items-center justify-center w-full lg:items-start lg:flex-row">
+          <div className="mr-10 rounded w-[320px] h-[320px] ">
             <div className="relative top-0 bottom-0 left-0 right-0 z-10 bg-yellow-100 rounded-full shadow-md shadow-yellow-500/50">
               <img
                 src="/images/doll-pink.png"

@@ -10,13 +10,11 @@ const ProjectCard = ({
   tecnologies,
   features,
   link,
-  index,
   web,
 }: {
   title: string;
   description: string;
   link: string;
-  index: number;
   features: string[];
   tecnologies: { name: string; stack: string }[];
   web?: string;
@@ -42,7 +40,7 @@ const ProjectCard = ({
               <p className="mb-2">- {feature}</p>
             </div>
           ))}
-          <div key={index} className="flex gap-2 my-1 ">
+          <div className="flex gap-2 my-1 ">
             <Link className="mb-2 " href={link} target="_blank">
               <div className="flex gap-3 ml-2 text-orange-500 border-b cursor-pointer items-align border-b-orange-500 hover:border-b-teal hover:text-teal">
                 <FiGithub className=" text-md" />
@@ -51,7 +49,7 @@ const ProjectCard = ({
             </Link>
           </div>
           {web && (
-            <div key={index} className="flex gap-2 my-1 mt-3 ">
+            <div className="flex gap-2 my-1 mt-3 ">
               <Link className="mb-2 " href={web} target="_blank">
                 <div className="flex gap-3 ml-2 text-orange-500 border-b cursor-pointer items-align border-b-orange-500 hover:border-b-teal hover:text-teal">
                   <HiOutlineGlobeAlt className=" text-md" />

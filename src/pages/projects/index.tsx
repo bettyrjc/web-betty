@@ -26,7 +26,6 @@ const Projects = () => {
                     tecnologies={job.tecnologies}
                     features={job.features}
                     link={job.link}
-                    index={index}
                   />
                 );
               })}
@@ -40,7 +39,6 @@ const Projects = () => {
                     tecnologies={job.tecnologies}
                     features={job.features}
                     link={job.link}
-                    index={index}
                   />
                 );
               })}
@@ -55,7 +53,6 @@ const Projects = () => {
                     features={job.features}
                     link={job.link}
                     web={job.web}
-                    index={index}
                   />
                 );
               })}
