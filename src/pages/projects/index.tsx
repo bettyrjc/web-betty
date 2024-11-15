@@ -52,7 +52,8 @@ const Projects = () => {
                     tecnologies={job.tecnologies}
                     features={job.features}
                     link={job.link}
-                    web={job.web}
+                    web={job?.web}
+                    npm={job?.npm}
                   />
                 );
               })}

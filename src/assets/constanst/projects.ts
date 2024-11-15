@@ -113,6 +113,7 @@ export const FRONTEND_PROJECTS = [
     ],
     link: 'https://github.com/bettyrjc/design-system',
     web: 'https://design-system-3b2ljavt2-betty-jimenezs-projects.vercel.app/',
+    npm: 'https://www.npmjs.com/package/musa-design-system',
   },
   {
     title: 'Poke to combat',

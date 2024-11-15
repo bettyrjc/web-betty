@@ -1,9 +1,20 @@
 import React from 'react';
 import { FiGithub } from 'react-icons/fi';
 import { HiOutlineGlobeAlt } from 'react-icons/hi';
+import { ImNpm } from 'react-icons/im';
 
-import Link from 'next/link';
-
+const LinkToOtherpage = ({ link, children }: { link: string; children: React.ReactNode }) => {
+  return (
+    <a
+      target="_blank"
+      href={link}
+      rel="noopener noreferrer"
+      className="flex items-center gap-1 mb-2 ml-2 text-orange-500 cursor-pointer hover:border-b-teal hover:text-teal"
+    >
+      {children}
+    </a>
+  );
+};
 const ProjectCard = ({
   title,
   description,
@@ -11,6 +22,7 @@ const ProjectCard = ({
   features,
   link,
   web,
+  npm,
 }: {
   title: string;
   description: string;
@@ -18,6 +30,7 @@ const ProjectCard = ({
   features: string[];
   tecnologies: { name: string; stack: string }[];
   web?: string;
+  npm?: string;
 }) => {
   return (
     <div>
@@ -41,21 +54,25 @@ const ProjectCard = ({
             </div>
           ))}
           <div className="flex gap-2 my-1 ">
-            <Link className="mb-2 " href={link} target="_blank">
-              <div className="flex gap-3 ml-2 text-orange-500 border-b cursor-pointer items-align border-b-orange-500 hover:border-b-teal hover:text-teal">
-                <FiGithub className=" text-md" />
-                <h6 className="font-bold cursor-pointer hover:text-teal">See repository</h6>
-              </div>
-            </Link>
+            <LinkToOtherpage link={link}>
+              <FiGithub className="text-md" />
+              <h6 className="font-bold cursor-pointer hover:text-teal">See repository</h6>
+            </LinkToOtherpage>
           </div>
           {web && (
             <div className="flex gap-2 my-1 mt-3 ">
-              <Link className="mb-2 " href={web} target="_blank">
-                <div className="flex gap-3 ml-2 text-orange-500 border-b cursor-pointer items-align border-b-orange-500 hover:border-b-teal hover:text-teal">
-                  <HiOutlineGlobeAlt className=" text-md" />
-                  <h6 className="font-bold cursor-pointer hover:text-teal">website</h6>
-                </div>
-              </Link>
+              <LinkToOtherpage link={web}>
+                <HiOutlineGlobeAlt className=" text-md" />
+                <h6 className="font-bold cursor-pointer hover:text-teal">website</h6>
+              </LinkToOtherpage>
+            </div>
+          )}
+          {npm && (
+            <div className="flex gap-2 my-1 mt-3 ">
+              <LinkToOtherpage link={npm}>
+                <ImNpm className=" text-md" />
+                <h6 className="font-bold cursor-pointer hover:text-teal">npm package</h6>
+              </LinkToOtherpage>
             </div>
           )}
         </div>
