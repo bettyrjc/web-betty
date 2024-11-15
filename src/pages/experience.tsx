@@ -9,13 +9,13 @@ import Layout from 'src/modules/layout/Layout';
 const Experience = () => {
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center w-full gap-4 px-4 mt-10 mb-10 lg:items-start lg:justify-start lg:px-4 lg:flex-row">
+      <div className="flex flex-col items-center justify-center w-full mt-10 mb-10 lg:items-start lg:justify-start lg:flex-row">
         <div className="flex items-center justify-center">
           <div className="w-[320px] lg:w-[450px]">
             <Doll />
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center w-full gap-10 lg:justify-start lg:items-start">
+        <div className="flex flex-col items-center w-full gap-10 lg:justify-start lg:items-start">
           {JOBS_MICA.map((job) => {
             return <ExperienceCard key={job.id} job={job} />;
           })}

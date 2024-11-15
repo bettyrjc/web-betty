@@ -8,11 +8,11 @@ const AboutMe = () => {
       <div className="flex justify-center w-full p-16">
         <div className="items-start justify-center w-full lg:flex">
           <div className="mr-10 rounded ">
-            <div className="relative top-0 bottom-0 left-0 right-0 z-10 rounded-full">
+            <div className="relative top-0 bottom-0 left-0 right-0 z-10 bg-yellow-100 rounded-full shadow-md shadow-yellow-500/50">
               <img
-                src="/images/doll.png"
+                src="/images/doll-pink.png"
                 alt="Picture of the author"
-                className="rounded-full w-[320px] h-[320px] object-contain"
+                className=" w-[320px] h-[320px] object-contain"
                 // objectFit="contain"
               />
             </div>

@@ -9,31 +9,31 @@ export const JOBS_MICA = [
     activities: [
       {
         id: 11,
-        name: '✅ UI/UX Design Excellence:',
+        name: '💄 UI/UX Design Excellence:',
         description:
           ' Successfully designed and developed user interfaces (UI) and user experiences (UX) across various platforms, ensuring a seamless and visually appealing leasing experience.',
       },
       {
         id: 12,
-        name: '✅ Frontend Development Mastery:',
+        name: '☀️ Frontend Development Mastery:',
         description:
           'Excelled in frontend development by crafting views using React JS, Tailwind CSS, hooks, and React Query, contributing to a dynamic and responsive leasing platform.',
       },
       {
         id: 13,
-        name: '✅ Mobile Application Complexity:',
+        name: '📲 Mobile Application Complexity:',
         description:
           'Navigated the complexities of mobile application development by creating a specialized app for brokers using React Native. Overcame challenges related to performance optimization, responsiveness, and ensuring a user-friendly interface.',
       },
       {
         id: 14,
-        name: '✅ Technical Conceptualization and Documentation:',
+        name: '📈 Technical Conceptualization and Documentation:',
         description:
           ' Conceptualized and defined technical requirements, adhering to agile methodologies. Developed comprehensive technical documentation, providing a solid foundation for the project&apos;s execution.',
       },
       {
         id: 15,
-        name: '✅ Deployment Challenges:',
+        name: '🤩 Deployment Challenges:',
         description:
           'Faced the intricate challenge of deploying the mobile application. Successfully organized and executed the deployment process, ensuring a smooth and efficient rollout to end-users.',
       },
@@ -53,13 +53,13 @@ export const JOBS_MERU = [
     activities: [
       {
         id: 21,
-        name: '✅ E-Commerce Website Development:',
+        name: '☀️ E-Commerce Website Development:',
         description:
           'Developed critical sections of the e-commerce website, including the carousel, checkout, and cart functionalities. Ensured a seamless and user-friendly shopping experience for customers.',
       },
       {
         id: 22,
-        name: '✅ Integration of Key Features:',
+        name: '📈 Integration of Key Features:',
         description:
           'Integrated Google Maps functionality to enhance the user experience by allowing customers to easily locate and purchase auto-parts. Implemented various payment methods, providing customers with a range of options for seamless transactions.',
       },
@@ -71,13 +71,13 @@ export const JOBS_MERU = [
       },
       {
         id: 24,
-        name: '✅ Operation Optimization:',
+        name: '🙂‍↔️ Operation Optimization:',
         description:
           ' Worked extensively on the operational aspects of the e-commerce platform. Developed and maintained robust systems for inventory management, order fulfillment, and customer service, ensuring smooth and efficient business operations.',
       },
       {
         id: 25,
-        name: '✅ Ticket Definition and Business Alignment:',
+        name: '🤓 Ticket Definition and Business Alignment:',
         description:
           'Defined and prioritized development tickets based on business requirements. Ensured that the development efforts aligned with the overarching business goals and customer needs.',
       },
@@ -97,25 +97,25 @@ export const JOBS_ASSISTENSI = [
     activities: [
       {
         id: 31,
-        name: '✅ Operative System Development:',
+        name: '💄 Operative System Development:',
         description:
           'Designed and developed the frontend of the operative system, ensuring a highly responsive and efficient user experience (UX/UI) for medical professionals.',
       },
       {
         id: 32,
-        name: '✅ User-Friendly Interface:',
+        name: '🤓 User-Friendly Interface:',
         description:
           'Created a user-friendly interface that facilitated easy access to patient data, enabling healthcare providers to deliver optimal care. The design prioritized intuitiveness, streamlining workflows for medical professionals',
       },
       {
         id: 33,
-        name: '✅ Communication Enhancement:',
+        name: '📞 Communication Enhancement:',
         description:
           'Implemented features to enhance communication among medical professionals within the system. This resulted in improved collaboration, coordination, and ultimately, better patient care.',
       },
       {
         id: 34,
-        name: '✅ Operation Optimization:',
+        name: '📈 Operation Optimization:',
         description:
           ' Worked extensively on the operational aspects of the e-commerce platform. Developed and maintained robust systems for inventory management, order fulfillment, and customer service, ensuring smooth and efficient business operations.',
       },
