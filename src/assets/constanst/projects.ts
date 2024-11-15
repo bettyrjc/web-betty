@@ -1,5 +1,3 @@
-import { features, title } from 'process';
-
 export const FULL_STACK_PROJECTS = [
   {
     title: 'Full Stack Project',

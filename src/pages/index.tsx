@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Image from 'next/image';
 import Link from 'next/link';
 import Script from 'next/script';
 import Layout from 'src/modules/layout/Layout';
