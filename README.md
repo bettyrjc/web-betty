@@ -11,6 +11,7 @@ Welcome to my personal website repository! This is a space where I showcase my p
 ## 🛠 Technologies
 
 - **Frontend:** [React](https://reactjs.org/), [Tailwind CSS](https://tailwindcss.com/), Next.js
+- **Other tools:** GITHUB ACTIONS
 
 ## 🚀 How to Run the Project Locally
 
@@ -22,6 +23,6 @@ Welcome to my personal website repository! This is a space where I showcase my p
    npm dev
    ```
 
-## 🌍 Live Website
+# 🌍 Live Website
 
 [Visit my website](https://betjimenez.com/)
