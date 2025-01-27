@@ -9,7 +9,7 @@ import Layout from 'src/modules/layout/Layout';
 const Experience = () => {
   return (
     <Layout>
-      <div className="flex flex-col items-center justify-center w-full mt-10 mb-10 lg:items-start lg:justify-start lg:flex-row">
+      <div className="flex flex-col items-center justify-center w-full flex-1 mt-10 mb-10 lg:items-start lg:justify-start lg:flex-row lg:h-screen">
         <div className="flex items-center justify-center">
           <div className="w-[320px] lg:w-[450px]">
             <Doll />
